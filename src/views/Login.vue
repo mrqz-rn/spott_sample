@@ -6,12 +6,18 @@
                 ONLINE TIME TRACKER
             </h1>
             <form @submit.prevent="handleLogin" class="space-y-4 p-8">
-                    <label class="block text-sm font-medium mb-1 text-left text-white">Username</label>
+                    <label class="block text-sm font-medium mb-1 text-left text-white">
+                        Username
+                        <span class="text-gray-400 px-1">(e.g.: admin)</span>
+                    </label>
                     <input v-model="credentials.username" type="text" required
                         class="text-white w-full border rounded px-3 py-2" 
                         placeholder="Enter Username"
                     />
-                    <label class="block text-sm font-medium mb-1 text-left text-white">Password</label>
+                    <label class="block text-sm font-medium mb-1 text-left text-white">
+                        Password
+                        <span class="text-gray-400 px-1">(e.g.: pass)</span>
+                    </label>
                      <input v-model="credentials.password" type="password" required
                         class="text-white w-full border rounded px-3 py-2" 
                         placeholder="Enter Password"
